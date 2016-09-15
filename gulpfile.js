@@ -12,10 +12,15 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function (mix) {
+
     mix.sass('app.scss');
-    mix.phpUnit();
     mix.scripts([
         'app.js'
     ], 'public/js/app.js');
     mix.copy('resources/assets/templates', 'public/templates');
+
+    // Don't run in Production
+    if(!elixir.config.production){
+        mix.phpUnit();
+    }
 });
