@@ -1,0 +1,57 @@
+aside {
+    background-color: #2c3e50;
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            padding: $grid-gutter-width / 2;
+            color: #FFF;
+            font-size: 18px;
+
+            &.active {
+                background-color: #446F6D;
+            }
+
+            a {
+                color: #FFF;
+
+                &:hover {
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            }
+
+            .actions {
+                display: none;
+
+                .fa {
+                    vertical-align: top;
+                }
+            }
+            
+            &:hover {
+
+                .actions {
+                    display: block;
+
+                    button {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-nav {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+    }
+}

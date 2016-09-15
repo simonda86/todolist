@@ -1,0 +1,21 @@
+$brand-primary: #4B81C0;
+$brand-success: #18bc9c;
+$brand-info: #E5C84A;
+$brand-warning: #CC7B3C;
+$brand-danger: #A44C61;
+$text-color: #525252;
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "buttons";
+@import "sidebar";
+@import "items";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $brand-success;
+    -webkit-font-smoothing: antialiased;
+}
+
+section#main {
+    padding-top: $grid-gutter-width / 2;
+}
